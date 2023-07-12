@@ -6,7 +6,7 @@ MONTH=`date +%Y-%d`
 DAY=`date +%Y-%m-%d`
 NOW="$(date +"%Y-%m-%d_%H-%M-%S")"
 # Variable Section -------------------------------------------
-DOMAIN_NAME=devopshobbieslearning.com
+DOMAIN_NAME=ubuntu01
 HostName=$DOMAIN_NAME
 SSH_PORT=1242
 BAC_DIR=/opt/backup/files_$NOW
@@ -141,6 +141,8 @@ cat <<EOT > /etc/issue.net
 * You are accessing a secured system and your actions will be logged along   *
 * with identifying information. Disconnect immediately if you are not an     *
 * authorized user of this system.                                            *
+* THIS SCRIPT GENERATE BY:
+************************** AMIN JANDAGHIAN ***********************************
 ------------------------------------------------------------------------------
 EOT
 
@@ -160,10 +162,10 @@ PermitRootLogin yes
 #StrictModes yes
 MaxAuthTries 3
 MaxSessions 2
-#PubkeyAuthentication yes
+PubkeyAuthentication yes
 
 # To disable tunneled clear text passwords, change to no here!
-PasswordAuthentication yes
+# PasswordAuthentication yes
 #PermitEmptyPasswords no
 
 ChallengeResponseAuthentication no

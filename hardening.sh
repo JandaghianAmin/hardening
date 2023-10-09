@@ -217,7 +217,7 @@ systemctl is-active --quiet sshd && echo -e "\e[1m \e[96m sshd service: \e[30;48
 
 #Copy Public Key -------------------------------------------
 #cat <<EOT >> /root/.ssh/authorized_keys
-# AmirBahador
+# Amin Jandaghian
 # ssh-rsa YOURSSH KEY
 #EOT
 
